@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools">
+
+    <include layout="@layout/item_input"/>
+
+   <androidx.coordinatorlayout.widget.CoordinatorLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent">
+
+       <com.google.android.material.appbar.AppBarLayout
+           android:id="@+id/appbar_test"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:background="#ffffff">
+
+           <com.youth.banner.Banner
+               android:id="@+id/my_banner"
+               android:background="@drawable/bg_banner"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="100dp"
+               app:layout_scrollFlags="scroll|enterAlways"/>
+
+           <LinearLayout
+               app:layout_scrollFlags="scroll|enterAlways"
+               android:layout_marginTop="8dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+
+               <ImageView
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_skill"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"/>
+               <ImageView
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_skill"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"/>
+               <ImageView
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_skill"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"/>
+               <ImageView
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_skill"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"/>
+               <ImageView
+                   android:layout_weight="1"
+                   android:src="@drawable/ic_skill"
+                   android:layout_width="0dp"
+                   android:layout_height="40dp"/>
+
+           </LinearLayout>
+
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="94dp"
+               android:layout_marginTop="-8dp"
+               android:src="@drawable/ic_activity"
+               app:layout_scrollFlags="scroll|enterAlways" />
+
+           <com.google.android.material.tabs.TabLayout
+               android:id="@+id/test_tab"
+               android:layout_marginTop="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="48dp">
+               <com.google.android.material.tabs.TabItem
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="关注"/>
+
+               <com.google.android.material.tabs.TabItem
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="推荐"/>
+               <com.google.android.material.tabs.TabItem
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="书籍"/>
+
+
+           </com.google.android.material.tabs.TabLayout>
+
+
+       </com.google.android.material.appbar.AppBarLayout>
+
+       <androidx.viewpager.widget.ViewPager
+           android:id="@+id/vp2"
+           app:layout_behavior="@string/appbar_scrolling_view_behavior"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"/>
+
+<!--       <androidx.recyclerview.widget.RecyclerView-->
+<!--           android:id="@+id/input_bottom_recycler"-->
+<!--           app:layout_behavior="@string/appbar_scrolling_view_behavior"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="match_parent"-->
+<!--           tools:listitem="@layout/item_recycler"-->
+<!--           tools:itemCount="10"-->
+<!--           app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"/>-->
+
+
+
+<!--       <RelativeLayout-->
+<!--           android:visibility="gone"-->
+<!--           android:layout_width="match_parent"-->
+<!--           android:layout_height="56dp"-->
+<!--           android:layout_gravity="bottom"-->
+<!--           android:padding="8dp"-->
+<!--           app:layout_behavior=".CustomExpandBehavior"-->
+<!--           android:background="@color/lightBlue">-->
+
+<!--           <Button-->
+<!--               android:id="@+id/btn_send"-->
+<!--               android:layout_width="wrap_content"-->
+<!--               android:layout_height="match_parent"-->
+<!--               android:text="Send"-->
+<!--               android:layout_alignParentRight="true"-->
+<!--               android:background="#ffffff"/>-->
+
+<!--           <EditText-->
+<!--               android:layout_width="match_parent"-->
+<!--               android:layout_height="match_parent"-->
+<!--               android:layout_toLeftOf="@id/btn_send"-->
+<!--               android:layout_marginRight="4dp"-->
+<!--               android:padding="4dp"-->
+<!--               android:hint="Please input the comment"-->
+<!--               android:background="#ffffff"/>-->
+
+<!--       </RelativeLayout>-->
+
+   </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</LinearLayout>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".jinxiang.JinXiangPageActivity">
+
+           <androidx.coordinatorlayout.widget.CoordinatorLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:paddingLeft="10dp"
+               android:paddingRight="10dp">
+
+
+               <com.google.android.material.appbar.AppBarLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="wrap_content"
+                   android:background="@color/design_default_color_surface">
+
+                   <com.youth.banner.Banner
+                       android:id="@+id/youth_banner"
+                       android:background="@drawable/bg_banner"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="100dp"
+                       app:layout_scrollFlags="scroll|enterAlways"/>
+
+                   <LinearLayout
+                       app:layout_scrollFlags="scroll|enterAlways"
+                       android:layout_marginTop="8dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="wrap_content"
+                       android:orientation="horizontal">
+
+                       <ImageView
+                           android:layout_weight="1"
+                           android:src="@drawable/ic_skill"
+                           android:layout_width="0dp"
+                           android:layout_height="40dp"/>
+                       <ImageView
+                           android:layout_weight="1"
+                           android:src="@drawable/ic_skill"
+                           android:layout_width="0dp"
+                           android:layout_height="40dp"/>
+                       <ImageView
+                           android:layout_weight="1"
+                           android:src="@drawable/ic_skill"
+                           android:layout_width="0dp"
+                           android:layout_height="40dp"/>
+                       <ImageView
+                           android:layout_weight="1"
+                           android:src="@drawable/ic_skill"
+                           android:layout_width="0dp"
+                           android:layout_height="40dp"/>
+                       <ImageView
+                           android:layout_weight="1"
+                           android:src="@drawable/ic_skill"
+                           android:layout_width="0dp"
+                           android:layout_height="40dp"/>
+
+                   </LinearLayout>
+
+                   <ImageView
+                       app:layout_scrollFlags="scroll|enterAlways"
+                       android:layout_width="match_parent"
+                       android:layout_height="90dp"
+                       android:layout_marginTop="-8dp"
+                       android:src="@drawable/ic_activity"/>
+
+                   <com.google.android.material.tabs.TabLayout
+                       android:id="@+id/first_tab"
+                       android:layout_marginTop="10dp"
+                       android:layout_width="match_parent"
+                       android:layout_height="?attr/actionBarSize">
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="关注"/>
+
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="推荐"/>
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="书籍"/>
+
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="手机"/>
+
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="服装"/>
+
+                       <com.google.android.material.tabs.TabItem
+                           android:layout_width="wrap_content"
+                           android:layout_height="wrap_content"
+                           android:text="运动"/>
+
+                   </com.google.android.material.tabs.TabLayout>
+
+               </com.google.android.material.appbar.AppBarLayout>
+
+               <androidx.core.widget.NestedScrollView
+                   android:layout_width="match_parent"
+                   android:layout_height="3000dp"
+                   app:layout_behavior="@string/appbar_scrolling_view_behavior"
+                   android:background="@color/colorVerdure">
+
+
+
+               </androidx.core.widget.NestedScrollView>
+
+           </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+</layout>
